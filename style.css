@@ -1,43 +1,66 @@
-/* 기본 스타일 */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+/* 기본 스타일 설정 */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
   color: #333;
 }
 
+/* 헤더 */
 header {
-  background-color: #004080;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e2a38;
   color: white;
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.skills ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-a {
-  color: #0066cc;
+nav a {
+  margin-left: 1.5rem;
   text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
+/* 섹션 */
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  line-height: 1.8;
+}
+
+/* 푸터 */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #eee;
-  font-size: 0.9rem;
+  padding: 2rem;
+  background: #f1f1f1;
+  margin-top: 2rem;
 }
